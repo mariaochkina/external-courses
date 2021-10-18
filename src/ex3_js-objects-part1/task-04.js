@@ -1,8 +1,8 @@
 function checkAndAddNewProperty (property, objectExample) {
-    const existence = objectExample.hasOwnProperty(property);
-    if (!existence) {
+    if (!objectExample.hasOwnProperty(property)) {
         objectExample[property]='new';
     }
+    return objectExample;
 }
 
 module.exports = checkAndAddNewProperty;

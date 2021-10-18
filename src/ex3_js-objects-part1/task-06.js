@@ -1,13 +1,22 @@
-var dog =  {
+const dog =  {
     name: 'Nord',
     size: 'small',
     breed: 'bedlington',
     age: 8
 }
-function deepClone(){
-    const clone = JSON.parse(JSON.stringify(dog));
-    console.log(clone);
-}    
-deepClone();
+
+const refTodog = dog;
+const animal = deepClone(dog);
+function deepClone(obj){
+    const clObj = {};
+    for (const i in obj){
+        if (obj[i] instanceof Object){
+            clObj[i] = deepClone(obj[i]);
+            continue;
+        }
+        clObj[i]=obj[i];
+    }
+    return clObj;
+}  
 
 module.exports = deepClone;

@@ -1,7 +1,5 @@
 let copiedObject = function (){
-        const newObject = { ...objectExample };
-        return newObject;
-      
+  return newObject = { ...objectExample };                              
 }
 
 module.exports = copiedObject;
