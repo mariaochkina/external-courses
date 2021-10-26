@@ -1,0 +1,35 @@
+html {
+    font-size: 16px;
+}
+
+div {
+    font-family: Impact;
+}
+
+body {
+    background-image: url(fon.jpg);
+}
+
+table {
+    background-color: rgb(110, 82, 82);
+}
+
+img {
+    width: 60%;
+    height: 40vw;
+    background-color: MistyRose;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    background-color: #ffcf48;
+    font-size: 1.5em;
+}
+
+pre {
+    background-color: rgb(60, 160, 113);
+}
